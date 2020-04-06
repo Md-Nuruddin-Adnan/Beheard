@@ -1,0 +1,246 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  p {
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    max-width: 150px;
+  }
+
+  .navbar-toggler {
+    padding: .15rem .5rem;
+  }
+
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  .banner {
+    min-height: 25vh;
+  }
+
+  .banner .left-text span {
+    font-size: 20px;
+  }
+
+  .banner .left-text h3 {
+    font-size: 15px;
+  }
+
+  .banner .outer {
+    height: 50px;
+    padding-left: 10px;
+  }
+
+  .banner .right-text {
+    padding: 15px 0 0 5px;
+    height: 50px;
+  }
+
+  .banner .right-text h1 {
+    font-size: 15px
+  }
+
+  .banner .row {
+    padding-top: 13vh;
+  }
+
+  .section_heading h2 {
+    font-size: 20px;
+    min-width: 250px;
+  }
+
+  .pricing_plan .img-box {
+    padding: 20px 0;
+  }
+
+  .pricing_plan .img-box img {
+    padding: 10px;
+  }
+
+  .pricing_plan ul {
+    font-size: 14px;
+  }
+
+  .pricing_plan ul li span {
+    font-size: 30px;
+  }
+
+  .feature_content {
+    padding: 40px 0;
+  }
+
+  .feature_content .col-lg-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .features img {
+    width: 50px;
+  }
+  .features h5 {
+    font-size: 15px;
+    padding: 5px 0 10px 0;
+  }
+
+  .features p {
+    font-size: 12px;
+  }
+
+  .feature_content a {
+    min-height: unset;
+    padding: 15px 10px;
+  }
+
+  .footer .newsletter .title {
+    font-size: 20px;
+  }
+
+  /* ======= Support page start ======== */
+  .support-content {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+
+  .support h1 {
+    font-size: 30px;
+  }
+
+  .support .support-content i {
+    font-size: 60px;
+  }
+
+  .support .support-content h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .support .support-content a {
+    font-size: 19px;
+  }
+  /* ====== end of support page ====== */
+  
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 991px) {
+  .banner {
+    min-height: 35vh;
+  }
+
+  .banner .row {
+    padding-top: 20vh;
+  }
+  
+  .banner .left-text h3 {
+    font-size: 34px;
+  }
+
+  .banner .right-text {
+    padding: 40px 0 0 0px;
+  }
+
+  .banner .right-text {
+    height: 110px;
+  }
+
+  .banner .right-text h1 {
+    font-size: 25px;
+  }
+
+  .banner .outer {
+    height: 110px;
+    padding-left: 20px;
+  }
+ }
+
+
+@media(max-width: 767px){
+  /* ====== shop page start ====== */
+  .shop .product_image .img-fluid {
+    max-width: 70%;
+  }
+  /* ====== end of shop page ====== */
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  /* === Support page start ===*/
+  .support .support-content i {
+    font-size: 60px;
+  }
+
+  .support .support-content h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .support .support-content a {
+    font-size: 22px;
+  }
+  /*=== end of support page ===*/
+
+
+  /*=== shop page ===*/
+  .shop .product_description h5 {
+    font-size: 12px;
+  }
+
+  .shop .product_description h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  /*=== end of shop page ===*/
+}
+
+ 
+/* Large devices (desktops and laptop) */
+@media (max-width: 991px) {
+  .navbar-light .navbar-nav .nav-link {
+    text-align: center;
+  }
+
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-light .cart {
+    padding-left: 0;
+  }
+
+  .features p {
+    margin-bottom: 20px;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 992px) and (max-width: 1300px) { 
+  .banner {
+    min-height: 35vh;
+  }
+
+  .banner .row {
+    padding-top: 20vh;
+  }
+
+  .banner .right-text h1 {
+    font-size: 45px;
+  }
+
+  .banner .right-text {
+    padding: 48px 0 0 61px;
+  }
+ }
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+ }

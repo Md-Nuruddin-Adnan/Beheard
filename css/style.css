@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #272727;
+}
+/* basic css end */
+
+/* common css start */
+.section_heading {
+  border-top: 5px solid #272727;
+  text-align: center;
+}
+
+.section_heading h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fcd025;
+  text-transform: uppercase;
+  background: #272727;
+  display: inline-block;
+  padding: 10px 50px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  min-width: 320px;
+}
+
+p {
+  font-size: 20px;
+  color: #272727;
+}
+
+/*// end of common css */
+
+/* main css start */
+
+/* === header section start === */
+.header {
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar {
+  background: #272727;
+  border-top: 5px solid  #fcd025;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #fff;
+  background: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fcd025;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active{
+  border-bottom: 1px solid #fff;
+  color: #fcd025;
+  margin: 0 10px;
+}
+
+.navbar-light .cart {
+  color: #fcd025;
+  padding-left: 40px;
+  padding-top: 10px;
+  display: block;
+}
+
+.header.translate-top {
+  transform: translateY(-120px);
+}
+
+.header.position-fixed {
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  transition: all 1s linear;
+}
+
+.header.position-fixed.translate-top {
+  transform: translateY(0px);
+  transition: 0.5s linear;
+}
+
+.header.position-fixed .navbar-brand {
+  max-width: 150px;
+}
+/* ===//end of header section === */
+
+/* === banner section start === */
+.banner {
+  background: url(../images/banner-image.png) no-repeat center center/cover;
+  min-height: 90vh;
+  padding-bottom: 15px;
+}
+
+.banner .row {
+  padding-top: 60vh;
+}
+
+.left-text {
+  padding-left: calc(30px + (300 - 30) * ((100vw - 992px) / (1920 - 992)));
+}
+
+.banner .left-text span {
+  font-size: 25px;
+}
+
+.banner .left-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.banner .outer {
+  background: #fff;
+  clip-path: polygon(8% 0%, 100% 0, 100% 100%, 8% 100%, 0% 50%);
+  height: 150px;
+  padding-left: 30px;
+  transition: all 0.2s linear;
+}
+
+.banner .right-text {
+  background: #272727;
+  clip-path: polygon(8% 0%, 100% 0, 100% 100%, 8% 100%, 0% 50%);
+  height: 150px;
+  padding: 35px 0 0 100px;
+  transition: all 0.2s linear;
+}
+
+.banner .right-text h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #fcd025;
+  text-transform: uppercase;
+}
+
+.banner .outer:hover {
+  background: #272727;
+}
+
+.banner .outer:hover .right-text {
+  background: #fcd025;
+}
+
+.banner .outer:hover .right-text h1 {
+  color: #272727;
+}
+
+.top-margin {
+  margin-top: 100px;
+}
+/* ===//end of banner section === */
+
+/* === pricing_plan area start === */
+.pricing_plan ul {
+  display: flex;
+  justify-content: space-around;
+  background: #272727;
+  color: #fcd025;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.pricing_plan ul li {
+  display: flex;
+  align-items: center;
+}
+
+.pricing_plan ul li span {
+  font-size: 60px;
+  line-height: 0;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.pricing_plan .img-box {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.pricing_plan .img-box img {
+  margin: auto;
+  max-width: 100%;
+  display: block;
+  transition: all 0.2s linear;
+  padding: 15px;
+  border: 1px solid transparent;
+}
+
+.pricing_plan .img-box img:hover {
+  border: 1px solid #fcd025;
+  border-radius: 5px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* ===//end of pricing_plan area  === */
+
+
+/* === features area start === */
+.feature_content {
+  padding: 80px 0;
+}
+
+.feature_content a {
+  background: #fff;
+  display: block;
+  min-height: 300px;
+  padding: 30px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+
+.feature_content a:hover {
+  border: 1px solid #fcd025;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.features img {
+  width: 100px;
+}
+
+.features h5 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #272727;
+  padding: 10px 0 20px 0;
+}
+
+.features p {
+  font-size: 18px;
+}
+/* ===//end of features area  === */
+
+/* === eligibility area start === */
+.eligibility_content {
+  padding: 60px 0;
+}
+
+.eligibility_content label {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.eligibility_content .form-control {
+  border-radius: 25px;
+  border: 2px solid #FCD025;
+  text-align: center;
+  color: #272727;
+
+}
+
+.eligibility_content .form-control::placeholder {
+  text-align: center;
+}
+
+.eligibility_content .btn {
+  background: #272727;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 0;
+  transition: all 0.2s linear;
+}
+
+.eligibility_content .btn:hover {
+  background: #fcd025;
+  color: #272727;
+}
+
+.validation_error_msg p {
+  background: #fcd025;
+  color: #272727;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* ===//end of eligibility area  === */
+
+/* ===================== Home page end ================= */
+
+
+
+/* =============== Support page start =============== */
+  .support h1 {
+    font-weight: 700;
+  }
+
+.support-content {
+  padding: 40px 15px;
+  margin-bottom: 30px;
+}
+
+.support .support-content i {
+  font-size: 100px;
+  color: #fcd025;
+  padding-bottom: 20px;
+}
+
+.support .support-content h4 {
+  color: #565656;
+  margin-bottom: 20px;
+}
+
+.support .support-content a {
+  font-size: 30px;
+  font-weight: 700;
+  color: #272727;
+}
+/* =============== Support page end =============== */
+
+
+
+/* =============== Shop page start =============== */
+.shop h1 {
+  font-weight: 700;
+}
+
+.shop .product {
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  border: 1px solid transparent;
+}
+
+.shop .product:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  border: 1px solid #fcd025;
+}
+
+.shop .description_box {
+  display: grid;
+  place-items: center;
+}
+
+.shop .product_image img {
+  width: 300px;
+}
+
+.shop .product_description h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.shop .product_description h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.shop .btn-select {
+  font-size: 16px;
+  font-weight: 700;
+  background: #fcd025;
+  min-width: 100px;
+}
+
+.shop .btn-select:hover {
+  background: #272727;
+  color: #fff;
+}
+
+/* ===============//end of Shop page =============== */
+
+/* === footer section start === */
+.footer {
+  background: #272727;
+  padding: 60px 0;
+}
+
+.footer .social_icon .title {
+  font-size: 22px;
+  color: #fcd025;
+  font-weight: 700;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+
+.footer .social_icon li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer .social_icon i {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fcd025;
+  padding-top: 9px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fcd025;
+  transition: all 0.2s linear;
+}
+
+.footer .social_icon i:hover {
+  background: #fcd025;
+  color: #272727;
+}
+
+.footer .newsletter .title {
+  font-size: 28px;
+  color: #fcd025;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer .newsletter .form-control {
+  background: #343434;
+  color:#989898;
+  border: 1px solid #989898;
+  border-radius: 0;
+}
+.footer .newsletter .form-control::placeholder{
+  font-style: italic;
+}
+
+.footer .newsletter .btn {
+  background: #fcd025;
+  font-weight: 500;
+  border-radius: 0;
+}
+
+/* back to top button round style */
+button:focus {
+  outline: 0;
+}
+
+.top-btn{
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  color: #272727;
+  background:#fcd025;
+  border-style: none;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  cursor: pointer;
+  display: none;
+  z-index: 998;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+.top-btn:hover {
+  background:#ddb71f;
+}
+/* ===//end of footer section === */

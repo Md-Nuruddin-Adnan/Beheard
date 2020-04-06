@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Beheard Support</title>
+  <link rel='shortcut icon' href='images/fav_logo.png' type='image/x-icon'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="customer_support"> 
+
+  <!-- === header section start === -->
+  <header id="header" class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a> </li>
+            <li class="nav-item"><a class="nav-link" href="index.html#price">PLANS</a> </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a> </li>
+            <li class="nav-item"><a class="nav-link" href="index.html#eligibility">ELIGIBILITY</a> </li>
+            <li class="nav-item"><a class="nav-link active" href="support.html">SUPPORT</a> </li>
+            <li class="nav-item text-center"><a class="cart" href="#"><i class="far fa-shopping-cart"></i></a></li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+  <!-- === support section start === -->
+  <section class="support py-5" id="support">
+    <div class="container">
+      <h1 class="text-center mb-5 wow fadeInUp">Customer Support</h1>
+      <div class="row">
+        <div class="col-md-6 wow fadeInUp">
+          <div class="support-content shadow text-center">
+            <div class="icon"><i class="fas fa-headset"></i></div>
+            <h4> Call Us:  </h4>
+            <a href="tel:8004994027">8004994027</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 wow fadeInUp">
+          <div class="support-content shadow text-center">
+            <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h4> Email Us:  </h4>
+            <a>Beheardmobile@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===//end of support section === -->
+ 
+ 
+
+  <!-- === footer section start === -->
+  <footer class="footer position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="social_icon text-lg-left text-center mb-3">
+            <div class="title">FOLLOW US ON</div>
+            <ul>
+              <li>
+                  <a href="https://www.facebook.com/Beheard-Mobile-115321626594604/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                  <a href="https://twitter.com/beheardmobile" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/beheard.mobile" target="_blank"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="newsletter text-lg-right text-center">
+            <div class="title">JOIN TO OUR NEWSLETTER</div>
+            <form>
+              <div class="form-group">
+                <input type="emial" class="form-control" placeholder="Your Email Address">
+              </div>
+              <button type="submit" class="btn">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- back to top button -->
+     <button class="top-btn"><i class="fas fa-arrow-up"></i></button>
+
+  </footer>
+  <!-- ===//end of footer section === -->
+ 
+
+ 
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    $(function(){
+      'use strict'; 
+      //wow jquery plugins
+      new WOW().init();
+      
+      //back to top button
+      $(".top-btn").click(function(){
+          $("html, body").animate({
+              "scrollTop" : "0"
+          }, 500)
+      });
+      
+      $(window).scroll(function(){
+          var scrollValue = $(this).scrollTop();
+          
+          //top button fade in fade out
+          if(scrollValue >= 300){
+              $(".top-btn").fadeIn();
+          }else{
+            $(".top-btn").fadeOut();
+          }
+
+          //header fixed
+          if(scrollValue >= 200){
+            $(".header").addClass("translate-top");
+          }else{
+            $(".header").removeClass("translate-top");
+          }
+
+          //header fixed
+          if(scrollValue >= 300){
+            $(".header").addClass("position-fixed");
+          }else{
+            $(".header").removeClass("position-fixed");
+          }
+
+          //banner space adjust
+          if(scrollValue >= 300){
+            $(".support").addClass("top-margin");
+          }else{
+            $(".support").removeClass("top-margin");
+          }
+      });
+    });
+  </script>
+</body>
+</html>
